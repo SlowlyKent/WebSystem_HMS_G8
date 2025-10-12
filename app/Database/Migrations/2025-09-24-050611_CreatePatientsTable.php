@@ -10,67 +10,67 @@ class CreatePatientsTable extends Migration
     {
         $this->forge->addField([
             'id' => [
-                'type' => 'INT',
-                'constraint' => 11,
+                'type'           => 'INT',
+                'constraint'     => 11,
+                'unsigned'       => true,
                 'auto_increment' => true,
-                'unsigned' => true,
+            ],
+            'patient_code' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '20',
+                'null'       => true,
+                'unique'     => true,
             ],
             'first_name' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '100',
-                'null' => false,
+                'null'       => false,
             ],
             'middle_name' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '100',
-                'null' => true,
+                'null'       => true,
             ],
             'last_name' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '100',
-                'null' => false,
+                'null'       => false,
             ],
             'date_of_birth' => [
                 'type' => 'DATE',
                 'null' => true,
             ],
             'gender' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '10',
-                'null' => true,
+                'null'       => true,
             ],
             'phone' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '20',
-                'null' => true,
+                'null'       => true,
             ],
             'email' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '100',
-                'null' => true,
+                'null'       => true,
             ],
             'address' => [
                 'type' => 'TEXT',
                 'null' => true,
             ],
             'status' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '50',
-                'null' => false,
+                'null'       => true,
             ],
             'room' => [
-                'type' => 'VARCHAR',
+                'type'       => 'VARCHAR',
                 'constraint' => '50',
-                'null' => true,
+                'null'       => true, // ✅ allow null
             ],
             'medical_notes' => [
                 'type' => 'TEXT',
-                'null' => true,
-            ],
-            'role_id' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
                 'null' => true,
             ],
             'created_at' => [
@@ -82,11 +82,8 @@ class CreatePatientsTable extends Migration
                 'null' => true,
             ],
         ]);
+
         $this->forge->addKey('id', true);
-
-        //foreign key
-        $this->forge->addForeignKey('role_id', 'roles', 'id', 'SET NULL', 'CASCADE');
-
         $this->forge->createTable('patients');
     }
 
