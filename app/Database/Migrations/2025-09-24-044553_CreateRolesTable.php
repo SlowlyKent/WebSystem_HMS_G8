@@ -109,6 +109,24 @@ class CreateRolesTable extends Migration
                     'created_at' => date('Y-m-d H:i:s'),
                     'updated_at' => date('Y-m-d H:i:s'),
                 ],
+                [
+                    'name' => 'lab_staff',
+                    'display_name' => 'Laboratory Staff',
+                    'description' => 'Handles laboratory tests and results',
+                    'level' => 15,
+                    'is_active' => true,
+                    'created_at' => date('Y-m-d H:i:s'),
+                    'updated_at' => date('Y-m-d H:i:s'),
+                ],
+                [
+                    'name' => 'accountant',
+                    'display_name' => 'Accountant',
+                    'description' => 'Manages financial records and billing',
+                    'level' => 10,
+                    'is_active' => true,
+                    'created_at' => date('Y-m-d H:i:s'),
+                    'updated_at' => date('Y-m-d H:i:s'),
+                ],
             ];
         $this->db->table('roles')->insertBatch($roles);
     }
