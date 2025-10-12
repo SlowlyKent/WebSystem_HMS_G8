@@ -12,61 +12,73 @@
     <div class="sidebar-menu">
         <?php 
         $currentUrl = current_url();
+        $role = session()->get('role');
         $menuItems = [
             'dashboard' => [
                 'url' => 'dashboard',
                 'icon' => 'tachometer-alt',
-                'text' => 'Dashboard'
+                'text' => 'Dashboard',
+                'roles' => ['admin', 'doctor', 'nurse', 'receptionist', 'lab_staff', 'pharmacist', 'accountant', 'it_staff']
             ],
             'patients' => [
                 'url' => 'admin/patients/registration',
                 'icon' => 'user-plus',
-                'text' => 'Patient Registration & EHR'
+                'text' => 'Patient Registration & EHR',
+                'roles' => ['admin', 'doctor', 'nurse', 'receptionist']
             ],
             'scheduling' => [
                 'url' => 'scheduling',
                 'icon' => 'calendar-alt',
-                'text' => 'Scheduling'
+                'text' => 'Scheduling',
+                'roles' => ['admin', 'receptionist', 'doctor']
             ],
             'billing' => [
                 'url' => 'billing',
                 'icon' => 'file-invoice-dollar',
-                'text' => 'Billing & Payment Processing'
+                'text' => 'Billing & Payment Processing',
+                'roles' => ['admin', 'accountant']
             ],
             'laboratory' => [
                 'url' => 'laboratory',
                 'icon' => 'flask',
-                'text' => 'Laboratory & Diagnostic Management'
+                'text' => 'Laboratory & Diagnostic',
+                'roles' => ['admin', 'doctor', 'lab_staff']
             ],
             'pharmacy' => [
                 'url' => 'pharmacy',
                 'icon' => 'pills',
-                'text' => 'Pharmacy & Inventory Control'
+                'text' => 'Pharmacy Management',
+                'roles' => ['admin', 'pharmacist']
             ],
             'database' => [
                 'url' => 'database',
                 'icon' => 'database',
-                'text' => 'Centralized Database'
+                'text' => 'Database',
+                'roles' => ['admin', 'it_staff']
             ],
             'reports' => [
                 'url' => 'reports',
                 'icon' => 'chart-bar',
-                'text' => 'Reports & Analytics Dashboard'
+                'text' => 'Reports & Analytics',
+                'roles' => ['admin', 'accountant']
             ],
             'security' => [
                 'url' => 'security',
                 'icon' => 'shield-alt',
-                'text' => 'Role-Based User Access & Data Security'
+                'text' => 'User Access & Security',
+                'roles' => ['admin', 'it_staff']
             ]
         ];
         ?>
         
         <nav class="nav flex-column">
-            <?php foreach ($menuItems as $key => $item): ?>
-                <?php 
+            <?php foreach ($menuItems as $key => $item): 
+                // Skip menu item if current role doesn't have access
+                if (!in_array($role, $item['roles'])) continue;
+                
                 $isActive = (strpos($currentUrl, $item['url']) !== false) || 
                            (uri_string() === '' && $key === 'dashboard');
-                ?>
+            ?>
                 <a class="nav-link <?= $isActive ? 'active' : '' ?>" href="<?= base_url($item['url']) ?>">
                     <i class="fas fa-<?= $item['icon'] ?>"></i>
                     <span><?= $item['text'] ?></span>

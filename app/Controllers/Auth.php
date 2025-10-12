@@ -144,8 +144,10 @@ class Auth extends Controller
             2 => 'doctor', 
             3 => 'nurse',
             4 => 'it_staff',
-            5 => 'teacher',
-            6 => 'student'
+            5 => 'receptionist',
+            6 => 'lab_staff',
+            7 => 'pharmacist',
+            8 => 'accountant'
         ];
         
         return $roles[$roleId] ?? 'nurse';
