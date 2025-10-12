@@ -40,6 +40,26 @@
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('show');
         }
+        
+        // Room dropdown selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const roomItems = document.querySelectorAll('.dropdown-item[data-value]');
+            const roomInput = document.querySelector('input[name="room"]');
+            const roomButton = document.getElementById('roomDropdown');
+            
+            roomItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const value = this.getAttribute('data-value');
+                    roomInput.value = value;
+                    roomButton.textContent = value;
+                    
+                    // Update active state
+                    roomItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
     </script>
 </body>
 </html>

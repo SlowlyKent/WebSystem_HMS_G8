@@ -81,9 +81,30 @@
         <label class="form-label">Address</label>
         <input type="text" name="address" value="<?= old('address') ?>" class="form-control">
       </div>
-      <div class="col-md-2">
+      <div class="col-md-4">
         <label class="form-label">Room</label>
-        <input type="text" name="room" value="<?= old('room') ?>" class="form-control" placeholder="e.g., 302">
+        <select name="room" class="form-select" id="roomSelect">
+          <option value="">Select a room</option>
+          <?php
+          $roomTypes = [
+            'EMM' => 'EMM',
+            'AGM' => 'AGM',
+            'CLINIC' => 'CLINIC',
+            'LAB' => 'LAB',
+            'WARD' => 'WARD'
+          ];
+          
+          foreach ($roomTypes as $key => $type) {
+            echo "<optgroup label='$type Rooms'>";
+            for ($i = 1; $i <= 5; $i++) {
+              $room = "$key " . str_pad($i, 2, '0', STR_PAD_LEFT);
+              $selected = (old('room') === $room) ? 'selected' : '';
+              echo "<option value='$room' $selected>$room</option>";
+            }
+            echo '</optgroup>';
+          }
+          ?>
+        </select>
       </div>
       <div class="col-12">
         <label class="form-label">Initial Medical Notes</label>
