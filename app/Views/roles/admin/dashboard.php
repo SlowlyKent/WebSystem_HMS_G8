@@ -9,6 +9,13 @@
     </div>
 </div>
 
+<!-- Actions -->
+<div class="mb-4">
+    <a href="<?= site_url('admin/patients/registration') ?>" class="btn btn-success">
+        <i class="fas fa-user-plus me-2"></i>Patient Registration &amp; EHR
+    </a>
+</div>
+
 <!-- Statistics Cards -->
 <div class="row g-4 mb-4">
     <div class="col-md-6">

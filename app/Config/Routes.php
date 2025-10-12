@@ -20,3 +20,9 @@ use CodeIgniter\Router\RouteCollection;
  
  // Dashboards Routes
  $routes->get('dashboard', 'Auth::dashboard');
+
+ // Admin Routes
+ $routes->group('admin', static function ($routes) {
+     $routes->get('patients/registration', 'Admin\Patients::registration');
+     $routes->post('patients/registration', 'Admin\Patients::store');
+ });

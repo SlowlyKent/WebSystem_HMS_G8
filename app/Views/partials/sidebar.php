@@ -10,51 +10,68 @@
     </div>
     
     <div class="sidebar-menu">
+        <?php 
+        $currentUrl = current_url();
+        $menuItems = [
+            'dashboard' => [
+                'url' => 'dashboard',
+                'icon' => 'tachometer-alt',
+                'text' => 'Dashboard'
+            ],
+            'patients' => [
+                'url' => 'admin/patients/registration',
+                'icon' => 'user-plus',
+                'text' => 'Patient Registration & EHR'
+            ],
+            'scheduling' => [
+                'url' => 'scheduling',
+                'icon' => 'calendar-alt',
+                'text' => 'Scheduling'
+            ],
+            'billing' => [
+                'url' => 'billing',
+                'icon' => 'file-invoice-dollar',
+                'text' => 'Billing & Payment Processing'
+            ],
+            'laboratory' => [
+                'url' => 'laboratory',
+                'icon' => 'flask',
+                'text' => 'Laboratory & Diagnostic Management'
+            ],
+            'pharmacy' => [
+                'url' => 'pharmacy',
+                'icon' => 'pills',
+                'text' => 'Pharmacy & Inventory Control'
+            ],
+            'database' => [
+                'url' => 'database',
+                'icon' => 'database',
+                'text' => 'Centralized Database'
+            ],
+            'reports' => [
+                'url' => 'reports',
+                'icon' => 'chart-bar',
+                'text' => 'Reports & Analytics Dashboard'
+            ],
+            'security' => [
+                'url' => 'security',
+                'icon' => 'shield-alt',
+                'text' => 'Role-Based User Access & Data Security'
+            ]
+        ];
+        ?>
+        
         <nav class="nav flex-column">
-            <a class="nav-link active" href="<?= base_url('dashboard') ?>">
-                <i class="fas fa-tachometer-alt"></i>
-                <span>Dashboard</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('patient-registration') ?>">
-                <i class="fas fa-user-plus"></i>
-                <span>Patient Registration & EHR</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('scheduling') ?>">
-                <i class="fas fa-calendar-alt"></i>
-                <span>Scheduling</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('billing') ?>">
-                <i class="fas fa-file-invoice-dollar"></i>
-                <span>Billing & Payment Processing</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('laboratory') ?>">
-                <i class="fas fa-flask"></i>
-                <span>Laboratory & Diagnostic Management</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('pharmacy') ?>">
-                <i class="fas fa-pills"></i>
-                <span>Pharmacy & Inventory Control</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('database') ?>">
-                <i class="fas fa-database"></i>
-                <span>Centralized Database</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('reports') ?>">
-                <i class="fas fa-chart-bar"></i>
-                <span>Reports & Analytics Dashboard</span>
-            </a>
-            
-            <a class="nav-link" href="<?= base_url('security') ?>">
-                <i class="fas fa-shield-alt"></i>
-                <span>Role-Based User Access & Data Security</span>
-            </a>
+            <?php foreach ($menuItems as $key => $item): ?>
+                <?php 
+                $isActive = (strpos($currentUrl, $item['url']) !== false) || 
+                           (uri_string() === '' && $key === 'dashboard');
+                ?>
+                <a class="nav-link <?= $isActive ? 'active' : '' ?>" href="<?= base_url($item['url']) ?>">
+                    <i class="fas fa-<?= $item['icon'] ?>"></i>
+                    <span><?= $item['text'] ?></span>
+                </a>
+            <?php endforeach; ?>
         </nav>
     </div>
 </div>
