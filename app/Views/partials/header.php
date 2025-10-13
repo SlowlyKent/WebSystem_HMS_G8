@@ -14,16 +14,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <?php if (session()->get('isLoggedIn')): ?>
-                        <?php $role = strtolower(session('role') ?? ''); ?>
-                        <?php if ($role === 'admin'): ?>
-                            <li><a class="nav-link" href="<?= base_url('dashboard'); ?>">Admin Dashboard</a></li>
-                            <li><a class="nav-link" href="<?= base_url('admin/users'); ?>">Manage Users</a></li>
-                            <li><a class="nav-link" href="<?= base_url('admin/settings'); ?>">Settings</a></li>
-                        <?php else: ?>
-                            <li><a class="nav-link" href="<?= base_url('dashboard'); ?>">Dashboard</a></li>
-                        <?php endif; ?>
                         <li>
-                            <a class="nav-link" href="<?= base_url('logout'); ?>">Logout</a>
+                            <a class="nav-link btn btn-outline-light btn-sm ms-2 text-dark" 
+                                href="<?= base_url('logout'); ?>"
+                                style="transition: all 0.3s;">
+                                    <i class="fas fa-sign-out-alt me-1"></i> Logout
+                            </a>
                         </li>
                     <?php else: ?>
                         <li><a class="nav-link" href="<?= base_url(''); ?>">Home</a> </li>

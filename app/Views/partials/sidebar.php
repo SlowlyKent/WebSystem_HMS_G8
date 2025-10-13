@@ -72,18 +72,29 @@
         ?>
         
         <nav class="nav flex-column">
-            <?php foreach ($menuItems as $key => $item): 
-                // Skip menu item if current role doesn't have access
-                if (!in_array($role, $item['roles'])) continue;
+            <?php
+            // Loop through each menu item
+            foreach ($menuItems as $key => $item) {
+                // Check if current user's role has access to this menu item
+                $hasAccess = in_array($role, $item['roles']);
+                if (!$hasAccess) {
+                    continue; // Skip if no access
+                }
+
+                // Check if this is the current active page
+                $isCurrentPage = strpos($currentUrl, $item['url']) !== false;
+                $isHomeDashboard = uri_string() === '' && $key === 'dashboard';
+                $isActive = $isCurrentPage || $isHomeDashboard;
                 
-                $isActive = (strpos($currentUrl, $item['url']) !== false) || 
-                           (uri_string() === '' && $key === 'dashboard');
-            ?>
-                <a class="nav-link <?= $isActive ? 'active' : '' ?>" href="<?= base_url($item['url']) ?>">
+                // Set active class if this is the current page
+                $activeClass = $isActive ? 'active' : '';
+                ?>
+                <a class="nav-link <?= $activeClass ?>" 
+                href="<?= base_url($item['url']) ?>">
                     <i class="fas fa-<?= $item['icon'] ?>"></i>
                     <span><?= $item['text'] ?></span>
                 </a>
-            <?php endforeach; ?>
+            <?php } // End of foreach loop ?>
         </nav>
     </div>
 </div>
