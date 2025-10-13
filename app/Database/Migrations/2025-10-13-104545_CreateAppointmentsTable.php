@@ -39,7 +39,22 @@ class CreateAppointmentsTable extends Migration
                 'unsigned' => true,
                 'null' => false,
             ],
-            'reason' => [
+            'appointment_date' => [
+                'type' => 'DATE',
+                'null' => false,
+            ],
+            'start_time' => [
+                'type' => 'TIME',
+            ],
+            'end_time' => [
+                'type' => 'TIME',
+            ],
+            'room' => [
+                'type' => 'VARCHAR',
+                'constraint' => '50',
+                'null' => true,
+            ],
+             'reason' => [
                 'type' => 'TEXT',
                 'null' => true,
             ],

@@ -64,11 +64,6 @@ class CreatePatientsTable extends Migration
                 'constraint' => '50',
                 'null'       => true,
             ],
-            'room' => [
-                'type'       => 'VARCHAR',
-                'constraint' => '50',
-                'null'       => true, // ✅ allow null
-            ],
             'medical_notes' => [
                 'type' => 'TEXT',
                 'null' => true,
