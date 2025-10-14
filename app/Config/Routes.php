@@ -14,7 +14,7 @@ use CodeIgniter\Router\RouteCollection;
  // Authentication Routes
  $routes->get('register', 'Auth::register');
  $routes->post('register', 'Auth::register');
-  $routes->get('login', 'Auth::login');
+ $routes->get('login', 'Auth::login');
  $routes->post('login', 'Auth::login');
  $routes->get('logout', 'Auth::logout');
  
@@ -24,6 +24,13 @@ use CodeIgniter\Router\RouteCollection;
  // Scheduling (Admin/Doctor)
 $routes->get('scheduling', 'Admin\Scheduling::index');
 $routes->post('scheduling', 'Admin\Scheduling::store');
+
+ // Appointments (Admin/Receptionist)
+ $routes->get('appointments', 'Admin\Appointments::index');
+ $routes->post('appointments', 'Admin\Appointments::store');
+ // Singular alias
+ $routes->get('appointment', 'Admin\\Appointments::index');
+ $routes->post('appointment', 'Admin\\Appointments::store');
 
  // Admin Routes
  $routes->group('admin', static function ($routes) {
