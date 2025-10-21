@@ -21,6 +21,17 @@ use CodeIgniter\Router\RouteCollection;
  // Dashboards Routes
  $routes->get('dashboard', 'Auth::dashboard');
 
+ // Scheduling (Admin/Doctor)
+$routes->get('scheduling', 'Admin\Scheduling::index');
+$routes->post('scheduling', 'Admin\Scheduling::store');
+
+ // Appointments (Admin/Receptionist)
+ $routes->get('appointments', 'Admin\Appointments::index');
+ $routes->post('appointments', 'Admin\Appointments::store');
+ // Singular alias
+ $routes->get('appointment', 'Admin\\Appointments::index');
+ $routes->post('appointment', 'Admin\\Appointments::store');
+
  // Admin Routes
  $routes->group('admin', static function ($routes) {
      $routes->get('patients/registration', 'Admin\Patients::registration');

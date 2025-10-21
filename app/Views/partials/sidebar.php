@@ -32,6 +32,12 @@
                 'text' => 'Scheduling',
                 'roles' => ['admin', 'receptionist', 'doctor']
             ],
+            'appointments' => [
+                'url' => 'appointments',
+                'icon' => 'calendar-check',
+                'text' => 'Appointments',
+                'roles' => ['admin', 'receptionist', 'doctor']
+            ],
             'billing' => [
                 'url' => 'billing',
                 'icon' => 'file-invoice-dollar',
