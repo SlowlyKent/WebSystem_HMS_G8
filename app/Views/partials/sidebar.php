@@ -39,7 +39,7 @@
                 'roles' => ['admin', 'receptionist', 'doctor']
             ],
             'billing' => [
-                'url' => 'billing',
+                'url' => 'admin/billing',
                 'icon' => 'file-invoice-dollar',
                 'text' => 'Billing & Payment Processing',
                 'roles' => ['admin', 'accountant']

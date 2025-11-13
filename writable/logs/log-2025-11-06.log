@@ -1,0 +1,1002 @@
+CRITICAL - 2025-11-06 14:29:11 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:29:12 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:29:23 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:30:28 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:30:29 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:30:29 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:30:31 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:30:35 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:30:44 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing/create]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:31:50 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:31:50 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:31:50 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:31:54 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/billing/test]
+in APPPATH\Controllers\Admin\Billing.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:38:12 --> Error: Class "App\Models\ServiceModel" not found
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Billing->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:38:15 --> Error: Class "App\Models\ServiceModel" not found
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Billing->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 14:39:38 --> TypeError: CodeIgniter\CLI\InputOutput::input(): Return value must be of type string, bool returned
+[Method: CLI, Route: db:table/bills]
+in SYSTEMPATH\CLI\InputOutput.php on line 46.
+ 1 SYSTEMPATH\CLI\CLI.php(260): CodeIgniter\CLI\InputOutput->input()
+ 2 SYSTEMPATH\CLI\CLI.php(298): CodeIgniter\CLI\CLI::prompt('
+Which table do you want to see?', [...], [...])
+ 3 SYSTEMPATH\Commands\Database\ShowTableInfo.php(145): CodeIgniter\CLI\CLI::promptByKey([], [...], 'required')
+ 4 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 5 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 6 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-11-06 14:40:51 --> mysqli_sql_exception: Duplicate key name 'bill_number' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `b...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\app\Database\Migrations\2023_11_07_000001_create_bills_table.php(111): CodeIgniter\Database\Forge->createTable('bills')
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateBillsTable->up()
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-11-06 14:41:17 --> mysqli_sql_exception: Duplicate key name 'bill_number' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `b...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\app\Database\Migrations\2023_11_07_000001_create_bills_table.php(111): CodeIgniter\Database\Forge->createTable('bills', true)
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateBillsTable->up()
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-11-06 14:42:15 --> mysqli_sql_exception: Duplicate key name 'bill_number' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\app\Database\Migrations\2023_11_07_000001_create_bills_table.php(111): CodeIgniter\Database\Forge->createTable('hms_bills', true)
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateBillsTable->up()
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-11-06 14:44:38 --> mysqli_sql_exception: Duplicate key name 'bill_number' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\app\Database\Migrations\2023_11_07_000001_create_bills_table.php(111): CodeIgniter\Database\Forge->createTable('hms_bills', true)
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateBillsTable->up()
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-11-06 14:47:58 --> mysqli_sql_exception: Duplicate key name 'bill_number' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\app\Database\Migrations\2023_11_07_000001_create_bills_table.php(111): CodeIgniter\Database\Forge->createTable('hms_bills', true)
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateBillsTable->up()
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-11-06 14:49:49 --> mysqli_sql_exception: Duplicate key name 'bill_number' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\app\Database\Migrations\2023_11_07_000001_create_bills_table.php(111): CodeIgniter\Database\Forge->createTable('hms_bills', true)
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateBillsTable->up()
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-11-06 14:49:58 --> Error: Class "App\Models\ServiceModel" not found
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Billing->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 14:50:30 --> mysqli_sql_exception: Duplicate key name 'bill_number' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\app\Database\Migrations\2023_11_07_000001_create_bills_table.php(111): CodeIgniter\Database\Forge->createTable('hms_bills', true)
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateBillsTable->up()
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-11-06 14:50:44 --> TypeError: CodeIgniter\CLI\InputOutput::input(): Return value must be of type string, bool returned
+[Method: CLI, Route: migrate:refresh]
+in SYSTEMPATH\CLI\InputOutput.php on line 46.
+ 1 SYSTEMPATH\CLI\CLI.php(260): CodeIgniter\CLI\InputOutput->input()
+ 2 SYSTEMPATH\Commands\Database\MigrateRefresh.php(78): CodeIgniter\CLI\CLI::prompt('Are you sure you want to refresh?', [...])
+ 3 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRefresh->run([...])
+ 4 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:refresh', [...])
+ 5 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 6 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 7 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:11:15 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:11:15 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:11:15 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:11:15 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:11:15 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:11:17 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:14:06 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:14:06 --> ParseError: syntax error, unexpected double-quoted string " max=", expecting "," or ";"
+[Method: GET, Route: admin/billing]
+in APPPATH\Views\roles\admin\billing\index.php on line 157.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('roles/admin/billing/index', [], true)
+ 3 APPPATH\Controllers\Admin\Billing.php(20): view('roles/admin/billing/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Billing->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Billing))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 15:44:14 --> ErrorException: Cannot redeclare App\Controllers\Admin\Billing::create()
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-11-06 15:44:14 --> ErrorException: Cannot redeclare App\Controllers\Admin\Billing::create()
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-11-06 15:44:14 --> ErrorException: Cannot redeclare App\Controllers\Admin\Billing::create()
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-11-06 15:44:14 --> ErrorException: Cannot redeclare App\Controllers\Admin\Billing::create()
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-11-06 15:44:22 --> ErrorException: Cannot redeclare App\Controllers\Admin\Billing::create()
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-11-06 16:43:45 --> ParseError: syntax error, unexpected token "{", expecting "function" or "const"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:43:46 --> ParseError: syntax error, unexpected token "{", expecting "function" or "const"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:43:47 --> ParseError: syntax error, unexpected token "{", expecting "function" or "const"
+[Method: GET, Route: admin/billing]
+in APPPATH\Controllers\Admin\Billing.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WebSystem_HMS_G8\\app\\Controllers\\Admin\\Billing.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Billing')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Billing')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Billing', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 16:48:03 --> mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\app\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\app\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\WebSystem_HMS_G8\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-11-06 16:48:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+[Method: GET, Route: admin/patients/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:48:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:48:03 --> [Caused by] mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 16:48:04 --> mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\app\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\app\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\WebSystem_HMS_G8\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-11-06 16:48:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+[Method: GET, Route: admin/patients/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:48:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:48:04 --> [Caused by] mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 16:59:23 --> mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\app\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\app\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\WebSystem_HMS_G8\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-11-06 16:59:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+[Method: GET, Route: admin/patients/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:59:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:59:23 --> [Caused by] mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 16:59:23 --> mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\app\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\app\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\WebSystem_HMS_G8\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-11-06 16:59:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+[Method: GET, Route: admin/patients/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:59:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 16:59:23 --> [Caused by] mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 17:04:15 --> mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\app\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\app\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\WebSystem_HMS_G8\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-11-06 17:04:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+[Method: GET, Route: admin/patients/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 17:04:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 17:04:15 --> [Caused by] mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 17:04:15 --> mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\app\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\app\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\WebSystem_HMS_G8\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-11-06 17:04:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+[Method: GET, Route: admin/patients/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 17:04:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 17:04:15 --> [Caused by] mysqli_sql_exception: Table 'hmsdb.insurance_providers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = 1
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `insurance_providers`
+WHERE `is_active` = :is_active:
+ORDER BY `name` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\InsuranceProviderModel.php(23): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin\Patients.php(30): App\Models\InsuranceProviderModel->getActiveProviders()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Patients->registration()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 17:04:49 --> mysqli_sql_exception: Unknown column 'room' in 'field list' in C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\WebSystem_HMS_G8\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\WebSystem_HMS_G8\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\WebSystem_HMS_G8\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\WebSystem_HMS_G8\app\Controllers\Admin\Patients.php(76): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(933): App\Controllers\Admin\Patients->store()
+#9 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Patients))
+#10 C:\xampp\htdocs\WebSystem_HMS_G8\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\WebSystem_HMS_G8\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\WebSystem_HMS_G8\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}

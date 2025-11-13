@@ -46,7 +46,8 @@ class Patients extends BaseController
             'email'          => $this->request->getPost('email') ?: null,
             'address'        => $this->request->getPost('address') ?: null,
             'status'         => $this->request->getPost('status') ?: null,
-            'room'           => $this->request->getPost('room') ?: null,
+            'insurance_provider' => $this->request->getPost('insurance_provider') ?: null,
+            'blood_type'     => $this->request->getPost('blood_type') ?: null,
             'medical_notes'  => $this->request->getPost('medical_notes') ?: null,
         ];
 
