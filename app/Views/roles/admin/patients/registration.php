@@ -58,6 +58,7 @@
           <option value="Other" <?= old('gender') === 'Other' ? 'selected' : '' ?>>Other</option>
         </select>
       </div>
+      
 
       <div class="col-md-4">
         <label class="form-label">Phone</label>
@@ -82,26 +83,39 @@
         <input type="text" name="address" value="<?= old('address') ?>" class="form-control">
       </div>
       <div class="col-md-4">
-        <label class="form-label">Room</label>
-        <select name="room" class="form-select" id="roomSelect">
-          <option value="">Select a room</option>
+        <label class="form-label">Insurance</label>
+        <select name="insurance_provider" class="form-select" id="insuranceSelect">
+          <option value="">Select insurance provider</option>
           <?php
-          $roomTypes = [
-            'EMM' => 'EMM',
-            'AGM' => 'AGM',
-            'CLINIC' => 'CLINIC',
-            'LAB' => 'LAB',
-            'WARD' => 'WARD'
+          // Fixed simple mapping of coverage percent per provider (10%–30%)
+          $insuranceProviders = [
+            'PhilHealth'   => 20,
+            'Maxicare'     => 25,
+            'MediCard'     => 15,
+            'PhilCare'     => 18,
+            'Cocolife'     => 22,
+            'Intellicare'  => 12,
+            'Other'        => 10,
           ];
+          foreach ($insuranceProviders as $value => $pct) {
+            $label = $value . " (" . $pct . "%)";
+            $selected = (old('insurance_provider') === $value) ? 'selected' : '';
+            echo "<option value='{$value}' data-coverage='{$pct}' {$selected}>{$label}</option>";
+          }
+          ?>
+        </select>
+        <small class="text-muted">Selecting a provider will auto-fill Coverage %.</small>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Blood Type</label>
+        <select name="blood_type" class="form-select" id="bloodTypeSelect">
+          <option value="">Select blood type</option>
+          <?php
+          $bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'Unknown'];
           
-          foreach ($roomTypes as $key => $type) {
-            echo "<optgroup label='$type Rooms'>";
-            for ($i = 1; $i <= 5; $i++) {
-              $room = "$key " . str_pad($i, 2, '0', STR_PAD_LEFT);
-              $selected = (old('room') === $room) ? 'selected' : '';
-              echo "<option value='$room' $selected>$room</option>";
-            }
-            echo '</optgroup>';
+          foreach ($bloodTypes as $type) {
+            $selected = (old('blood_type') === $type) ? 'selected' : '';
+            echo "<option value='$type' $selected>$type</option>";
           }
           ?>
         </select>
@@ -133,7 +147,8 @@
             <th>Name</th>
             <th>Gender</th>
             <th>Status</th>
-            <th>Room</th>
+            <th>Insurance</th>
+            <th>Blood Type</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -145,7 +160,8 @@
                 <td><?= esc(trim(($p['first_name'] ?? '') . ' ' . ($p['last_name'] ?? ''))) ?></td>
                 <td><?= esc($p['gender'] ?? 'N/A') ?></td>
                 <td><?= esc($p['status'] ?? 'N/A') ?></td>
-                <td><?= esc($p['room'] ?? 'N/A') ?></td>
+                <td><?= esc($p['insurance_provider'] ?? 'N/A') ?></td>
+                <td><?= esc($p['blood_type'] ?? 'N/A') ?></td>
                 <td>
                   <div class="btn-group btn-group-sm" role="group">
                     <a class="btn btn-outline-primary" href="#" title="View"><i class="fas fa-eye"></i></a>
@@ -155,7 +171,7 @@
               </tr>
             <?php endforeach; ?>
           <?php else: ?>
-            <tr><td colspan="6" class="text-center text-muted">No patient records yet.</td></tr>
+            <tr><td colspan="7" class="text-center text-muted">No patient records yet.</td></tr>
           <?php endif; ?>
         </tbody>
       </table>
@@ -164,3 +180,5 @@
 </div>
 
 <?= $this->endSection() ?>
+
+

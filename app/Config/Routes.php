@@ -34,6 +34,17 @@ $routes->post('scheduling', 'Admin\Scheduling::store');
 
  // Admin Routes
  $routes->group('admin', static function ($routes) {
+     // Patient routes
      $routes->get('patients/registration', 'Admin\Patients::registration');
      $routes->post('patients/registration', 'Admin\Patients::store');
+     
+     // Billing routes
+     $routes->get('billing', 'Admin\Billing::index');
+     $routes->post('billing', 'Admin\Billing::store');
+     $routes->get('billing/create', 'Admin\Billing::create');
+     $routes->get('billing/(:num)', 'Admin\Billing::view/$1');
+     $routes->post('billing/(:num)/pay', 'Admin\Billing::pay/$1');
+     $routes->post('billing/pay', 'Admin\Billing::quickPay');
+     $routes->post('billing/(:num)/status/(:segment)', 'Admin\Billing::updateStatus/$1/$2');
+     $routes->get('billing/(:num)/receipt', 'Admin\Billing::generateReceipt/$1');
  });

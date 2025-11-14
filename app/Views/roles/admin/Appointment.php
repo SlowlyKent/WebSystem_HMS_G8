@@ -135,6 +135,32 @@
         </select>
       </div>
 
+      <div class="col-md-3">
+        <label class="form-label">Room <span class="text-danger">*</span></label>
+        <select name="room" class="form-select" required>
+          <option value="">Select a room</option>
+          <?php
+          $roomTypes = [
+            'EMM' => 'EMM',
+            'AGM' => 'AGM',
+            'CLINIC' => 'CLINIC',
+            'LAB' => 'LAB',
+            'WARD' => 'WARD'
+          ];
+          
+          foreach ($roomTypes as $key => $type) {
+            echo "<optgroup label='$type Rooms'>";
+            for ($i = 1; $i <= 5; $i++) {
+              $room = "$key " . str_pad($i, 2, '0', STR_PAD_LEFT);
+              $selected = (old('room') === $room) ? 'selected' : '';
+              echo "<option value='$room' $selected>$room</option>";
+            }
+            echo '</optgroup>';
+          }
+          ?>
+        </select>
+      </div>
+
       <div class="col-12 d-flex justify-content-end">
         <button class="btn btn-success">
           <i class="fas fa-save me-2"></i>Save Appointment
