@@ -93,10 +93,38 @@ $bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'Unknown'];
           <option value="Discharged" <?= old('status') === 'Discharged' ? 'selected' : '' ?>>Discharged</option>
         </select>
       </div>
+      <div class="col-md-4">
+        <label class="form-label">Blood Type</label>
+        <select name="blood_type" class="form-select" id="bloodTypeSelect">
+          <option value="">Select blood type</option>
+          <?php foreach ($bloodTypes as $type): ?>
+            <?php $selected = (old('blood_type') === $type) ? 'selected' : ''; ?>
+            <option value="<?= esc($type) ?>" <?= $selected ?>><?= esc($type) ?></option>
+          <?php endforeach; ?>
+        </select>
+      </div>
 
-      <div class="col-md-8">
-        <label class="form-label">Address</label>
-        <input type="text" name="address" value="<?= old('address') ?>" class="form-control">
+      <div class="col-md-3">
+        <label class="form-label">Province (Region 12)</label>
+        <select name="province" id="provinceSelect" class="form-select">
+          <option value="">Select Province</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">City / Municipality</label>
+        <select name="city_municipality" id="citySelect" class="form-select" disabled>
+          <option value="">Select City / Municipality</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Barangay</label>
+        <select name="barangay" id="barangaySelect" class="form-select" disabled>
+          <option value="">Select Barangay</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Street</label>
+        <input type="text" name="street" value="<?= old('street') ?>" class="form-control" placeholder="Street / Purok / Lot">
       </div>
 
       <div class="col-12">
@@ -157,17 +185,6 @@ $bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'Unknown'];
               <input type="date" name="insurance_valid_until" value="<?= old('insurance_valid_until') ?>" class="form-control" placeholder="mm/dd/yyyy">
               <small class="text-muted">Insurance expiration date</small>
             </div>
-
-            <div class="col-md-4">
-              <label class="form-label fw-semibold">Blood Type</label>
-              <select name="blood_type" class="form-select" id="bloodTypeSelect">
-                <option value="">Select blood type</option>
-                <?php foreach ($bloodTypes as $type): ?>
-                  <?php $selected = (old('blood_type') === $type) ? 'selected' : ''; ?>
-                  <option value="<?= esc($type) ?>" <?= $selected ?>><?= esc($type) ?></option>
-                <?php endforeach; ?>
-              </select>
-            </div>
           </div>
         </div>
       </div>
@@ -216,8 +233,8 @@ $bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'Unknown'];
                 <td><?= esc($p['blood_type'] ?? 'N/A') ?></td>
                 <td>
                   <div class="btn-group btn-group-sm" role="group">
-                    <a class="btn btn-outline-primary" href="#" title="View"><i class="fas fa-eye"></i></a>
-                    <a class="btn btn-outline-secondary" href="#" title="Edit"><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-outline-primary" href="<?= site_url('admin/patients/view/' . ($p['id'] ?? '')) ?>" title="View"><i class="fas fa-eye"></i></a>
+                    <a class="btn btn-outline-secondary" href="<?= site_url('admin/patients/edit/' . ($p['id'] ?? '')) ?>" title="Edit"><i class="fas fa-edit"></i></a>
                   </div>
                 </td>
               </tr>
@@ -233,26 +250,143 @@ $bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'Unknown'];
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  // -----------------------
+  // Insurance auto-coverage
+  // -----------------------
   const providerSelect = document.getElementById('insuranceProviderSelect');
   const coverageSelect = document.getElementById('coveragePercentSelect');
   const coverageMap = <?= json_encode($insuranceProviders) ?>;
 
-  if (!providerSelect || !coverageSelect) {
-    return;
+  if (providerSelect && coverageSelect) {
+    const applyAutoCoverage = () => {
+      const selectedProvider = providerSelect.value;
+      if (selectedProvider && coverageMap[selectedProvider]) {
+        coverageSelect.value = String(coverageMap[selectedProvider]);
+      }
+    };
+
+    providerSelect.addEventListener('change', applyAutoCoverage);
+
+    // Prefill on load if user selected a provider but no coverage yet
+    if (!coverageSelect.value) {
+      applyAutoCoverage();
+    }
   }
 
-  const applyAutoCoverage = () => {
-    const selectedProvider = providerSelect.value;
-    if (selectedProvider && coverageMap[selectedProvider]) {
-      coverageSelect.value = String(coverageMap[selectedProvider]);
+  // -----------------------
+  // Region 12 address data
+  // -----------------------
+  const region12Data = {
+    'South Cotabato': {
+      'Koronadal City': ['Zone III', 'Zone IV', 'San Isidro'],
+      'Polomolok': ['Cannery Site', 'Poblacion', 'Glamang'],
+      'Tupi': ['Poblacion', 'Linan', 'Polonuling']
+    },
+    'Sarangani': {
+      'Alabel': ['Poblacion', 'Paraiso', 'Kawas'],
+      'Glan': ['Poblacion', 'Gumasa', 'Tango'],
+      'Maasim': ['Poblacion', 'Amsipit', 'Seven Hills'],
+      'Maitum': ['Poblacion', 'Kalaong', 'Upo'],
+      'Malapatan': ['Poblacion', 'Lun Masla', 'Lun Padidu', 'Sapu Padidu'],
+      'Malungon': ['Poblacion', 'Domolok', 'Nagpan']
+    },
+    'Cotabato (North)': {
+      'Kidapawan City': ['Poblacion', 'Lanao', 'Sudapin'],
+      'Midsayap': ['Poblacion 1', 'Bual Norte', 'Kayaga'],
+      'Kabacan': ['Poblacion', 'Buluan', 'Simoney']
+    },
+    'Sultan Kudarat': {
+      'Isulan': ['Kalawag I', 'Kalawag II', 'Kalawag III'],
+      'Tacurong City': ['Poblacion', 'Buenaflor', 'New Carmen'],
+      'Lebak': ['Poblacion', 'Kulaman', 'Purus']
     }
   };
 
-  providerSelect.addEventListener('change', applyAutoCoverage);
+  const provinceSelectEl = document.getElementById('provinceSelect');
+  const citySelectEl = document.getElementById('citySelect');
+  const barangaySelectEl = document.getElementById('barangaySelect');
 
-  // Prefill on load if user selected a provider but no coverage yet
-  if (!coverageSelect.value) {
-    applyAutoCoverage();
+  // Helper to reset a select element with a placeholder
+  function resetSelect(selectEl, placeholderText) {
+    if (!selectEl) return;
+    selectEl.innerHTML = '';
+    const opt = document.createElement('option');
+    opt.value = '';
+    opt.textContent = placeholderText;
+    selectEl.appendChild(opt);
+    selectEl.value = '';
+    selectEl.disabled = true;
+  }
+
+  // Populate Province dropdown with Region 12 provinces
+  if (provinceSelectEl && citySelectEl && barangaySelectEl) {
+    const oldProvince = '<?= esc(old('province') ?? '', 'js') ?>';
+    const oldCity = '<?= esc(old('city_municipality') ?? '', 'js') ?>';
+    const oldBarangay = '<?= esc(old('barangay') ?? '', 'js') ?>';
+
+    resetSelect(provinceSelectEl, 'Select Province');
+    Object.keys(region12Data).forEach(function (provinceName) {
+      const opt = document.createElement('option');
+      opt.value = provinceName;
+      opt.textContent = provinceName;
+      if (oldProvince === provinceName) {
+        opt.selected = true;
+      }
+      provinceSelectEl.appendChild(opt);
+    });
+    provinceSelectEl.disabled = false;
+
+    // When province changes, update cities
+    provinceSelectEl.addEventListener('change', function () {
+      const selectedProvince = this.value;
+      resetSelect(citySelectEl, 'Select City / Municipality');
+      resetSelect(barangaySelectEl, 'Select Barangay');
+
+      if (!selectedProvince || !region12Data[selectedProvince]) {
+        return;
+      }
+
+      const cities = Object.keys(region12Data[selectedProvince]);
+      cities.forEach(function (cityName) {
+        const opt = document.createElement('option');
+        opt.value = cityName;
+        opt.textContent = cityName;
+        citySelectEl.appendChild(opt);
+      });
+      citySelectEl.disabled = false;
+    });
+
+    // When city changes, update barangays
+    citySelectEl.addEventListener('change', function () {
+      const selectedProvince = provinceSelectEl.value;
+      const selectedCity = this.value;
+      resetSelect(barangaySelectEl, 'Select Barangay');
+
+      if (!selectedProvince || !selectedCity) {
+        return;
+      }
+
+      const barangays = region12Data[selectedProvince][selectedCity] || [];
+      barangays.forEach(function (brgyName) {
+        const opt = document.createElement('option');
+        opt.value = brgyName;
+        opt.textContent = brgyName;
+        barangaySelectEl.appendChild(opt);
+      });
+      barangaySelectEl.disabled = barangays.length === 0;
+    });
+
+    // Reapply old selections after validation error (if any)
+    if (oldProvince && region12Data[oldProvince]) {
+      provinceSelectEl.dispatchEvent(new Event('change'));
+      if (oldCity && region12Data[oldProvince][oldCity]) {
+        citySelectEl.value = oldCity;
+        citySelectEl.dispatchEvent(new Event('change'));
+        if (oldBarangay) {
+          barangaySelectEl.value = oldBarangay;
+        }
+      }
+    }
   }
 });
 </script>

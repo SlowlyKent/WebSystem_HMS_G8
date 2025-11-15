@@ -37,6 +37,9 @@ $routes->post('scheduling', 'Admin\Scheduling::store');
      // Patient routes
      $routes->get('patients/registration', 'Admin\Patients::registration');
      $routes->post('patients/registration', 'Admin\Patients::store');
+     $routes->get('patients/view/(:num)', 'Admin\Patients::view/$1');
+     $routes->get('patients/edit/(:num)', 'Admin\Patients::edit/$1');
+     $routes->post('patients/update/(:num)', 'Admin\Patients::update/$1');
      
      // Billing routes
      $routes->get('billing', 'Admin\Billing::index');

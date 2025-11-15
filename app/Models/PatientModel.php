@@ -22,7 +22,6 @@ class PatientModel extends Model
         'gender',
         'phone',
         'email',
-        'address',
         'status',
         'insurance_provider',
         'insurance_policy_no',
