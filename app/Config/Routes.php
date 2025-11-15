@@ -32,6 +32,14 @@ $routes->post('scheduling', 'Admin\Scheduling::store');
  $routes->get('appointment', 'Admin\\Appointments::index');
  $routes->post('appointment', 'Admin\\Appointments::store');
 
+ // Laboratory Routes (Admin/Doctor/Lab Staff)
+ $routes->get('laboratory', 'Admin\Laboratory::index');
+ $routes->post('laboratory/request', 'Admin\Laboratory::createRequest');
+ $routes->post('laboratory/sample/(:num)', 'Admin\Laboratory::collectSample/$1');
+ $routes->get('laboratory/results/(:num)', 'Admin\Laboratory::viewResults/$1');
+ $routes->post('laboratory/results/(:num)', 'Admin\Laboratory::enterResults/$1');
+ $routes->post('laboratory/verify/(:num)', 'Admin\Laboratory::verifyResults/$1');
+
  // Admin Routes
  $routes->group('admin', static function ($routes) {
      // Patient routes

@@ -85,7 +85,7 @@ class UserSeeder extends Seeder
             [
                 'username' => 'accountant',
                 'email' => 'accounting@hms.com',
-                'password' => password_hash('account123', PASSWORD_DEFAULT),
+                'password' => password_hash(' ', PASSWORD_DEFAULT),
                 'first_name' => 'Jennifer',
                 'last_name' => 'Lee',
                 'role_id' => 8, // accountant
