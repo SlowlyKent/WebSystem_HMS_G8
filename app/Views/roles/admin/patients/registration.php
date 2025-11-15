@@ -1,6 +1,22 @@
 <?= $this->extend('layouts/template') ?>
 
 <?= $this->section('content') ?>
+
+<?php
+$insuranceProviders = [
+  'PhilHealth'  => 20,
+  'Maxicare'    => 25,
+  'MediCard'    => 15,
+  'PhilCare'    => 18,
+  'Cocolife'    => 22,
+  'Intellicare' => 12,
+  'Other'       => 10,
+];
+
+$coverageOptions = [10, 12, 15, 18, 20, 22, 25, 30, 35, 40, 50, 60, 75, 80, 100];
+
+$bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'Unknown'];
+?>
 <div class="dashboard-welcome mb-4">
   <div class="d-flex align-items-center">
     <i class="fas fa-id-card fa-2x me-3"></i>
@@ -82,44 +98,80 @@
         <label class="form-label">Address</label>
         <input type="text" name="address" value="<?= old('address') ?>" class="form-control">
       </div>
-      <div class="col-md-4">
-        <label class="form-label">Insurance</label>
-        <select name="insurance_provider" class="form-select" id="insuranceSelect">
-          <option value="">Select insurance provider</option>
-          <?php
-          // Fixed simple mapping of coverage percent per provider (10%–30%)
-          $insuranceProviders = [
-            'PhilHealth'   => 20,
-            'Maxicare'     => 25,
-            'MediCard'     => 15,
-            'PhilCare'     => 18,
-            'Cocolife'     => 22,
-            'Intellicare'  => 12,
-            'Other'        => 10,
-          ];
-          foreach ($insuranceProviders as $value => $pct) {
-            $label = $value . " (" . $pct . "%)";
-            $selected = (old('insurance_provider') === $value) ? 'selected' : '';
-            echo "<option value='{$value}' data-coverage='{$pct}' {$selected}>{$label}</option>";
-          }
-          ?>
-        </select>
-        <small class="text-muted">Selecting a provider will auto-fill Coverage %.</small>
+
+      <div class="col-12">
+        <div class="p-4 border rounded-3 bg-light-subtle">
+          <div class="d-flex align-items-center mb-3">
+            <div class="me-3">
+              <span class="badge rounded-circle bg-primary-subtle text-primary p-3">
+                <i class="fas fa-shield-heart"></i>
+              </span>
+            </div>
+            <div>
+              <h5 class="mb-0">Insurance Information</h5>
+              <small class="text-muted">Selecting a provider will auto-fill the coverage percentage.</small>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Insurance Provider</label>
+              <select name="insurance_provider" class="form-select" id="insuranceProviderSelect">
+                <option value="">Select insurance provider</option>
+                <?php foreach ($insuranceProviders as $value => $pct): ?>
+                  <?php $selected = (old('insurance_provider') === $value) ? 'selected' : ''; ?>
+                  <option value="<?= esc($value) ?>" data-coverage="<?= esc($pct) ?>" <?= $selected ?>>
+                    <?= esc($value) ?> (<?= esc($pct) ?>%)
+                  </option>
+                <?php endforeach; ?>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Policy Number</label>
+              <input type="text" name="insurance_policy_no" value="<?= old('insurance_policy_no') ?>" class="form-control" placeholder="Enter policy number">
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Coverage Percentage (%)</label>
+              <select name="insurance_coverage_pct" class="form-select" id="coveragePercentSelect">
+                <option value="">Select Coverage %</option>
+                <?php foreach ($coverageOptions as $pct): ?>
+                  <?php $selected = ((string) old('insurance_coverage_pct') === (string) $pct) ? 'selected' : ''; ?>
+                  <option value="<?= esc($pct) ?>" <?= $selected ?>><?= esc($pct) ?>%</option>
+                <?php endforeach; ?>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Maximum Coverage per Bill (₱)</label>
+              <div class="input-group">
+                <span class="input-group-text">₱</span>
+                <input type="text" name="insurance_max_per_bill" value="<?= old('insurance_max_per_bill') ?>" class="form-control" placeholder="e.g., 50000.00" inputmode="decimal">
+              </div>
+              <small class="text-muted">Maximum amount insurance will pay per bill (optional)</small>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Valid Until</label>
+              <input type="date" name="insurance_valid_until" value="<?= old('insurance_valid_until') ?>" class="form-control" placeholder="mm/dd/yyyy">
+              <small class="text-muted">Insurance expiration date</small>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Blood Type</label>
+              <select name="blood_type" class="form-select" id="bloodTypeSelect">
+                <option value="">Select blood type</option>
+                <?php foreach ($bloodTypes as $type): ?>
+                  <?php $selected = (old('blood_type') === $type) ? 'selected' : ''; ?>
+                  <option value="<?= esc($type) ?>" <?= $selected ?>><?= esc($type) ?></option>
+                <?php endforeach; ?>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <label class="form-label">Blood Type</label>
-        <select name="blood_type" class="form-select" id="bloodTypeSelect">
-          <option value="">Select blood type</option>
-          <?php
-          $bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'Unknown'];
-          
-          foreach ($bloodTypes as $type) {
-            $selected = (old('blood_type') === $type) ? 'selected' : '';
-            echo "<option value='$type' $selected>$type</option>";
-          }
-          ?>
-        </select>
-      </div>
+
       <div class="col-12">
         <label class="form-label">Initial Medical Notes</label>
         <textarea name="medical_notes" class="form-control" rows="3" placeholder="Any initial observations or notes..."><?= old('medical_notes') ?></textarea>
@@ -178,6 +230,32 @@
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const providerSelect = document.getElementById('insuranceProviderSelect');
+  const coverageSelect = document.getElementById('coveragePercentSelect');
+  const coverageMap = <?= json_encode($insuranceProviders) ?>;
+
+  if (!providerSelect || !coverageSelect) {
+    return;
+  }
+
+  const applyAutoCoverage = () => {
+    const selectedProvider = providerSelect.value;
+    if (selectedProvider && coverageMap[selectedProvider]) {
+      coverageSelect.value = String(coverageMap[selectedProvider]);
+    }
+  };
+
+  providerSelect.addEventListener('change', applyAutoCoverage);
+
+  // Prefill on load if user selected a provider but no coverage yet
+  if (!coverageSelect.value) {
+    applyAutoCoverage();
+  }
+});
+</script>
 
 <?= $this->endSection() ?>
 

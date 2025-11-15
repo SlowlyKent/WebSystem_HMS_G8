@@ -35,6 +35,20 @@ class Patients extends BaseController
 
     public function store()
     {
+        $coveragePctInput = $this->request->getPost('insurance_coverage_pct');
+        $coveragePct = ($coveragePctInput !== null && $coveragePctInput !== '') ? (float) $coveragePctInput : null;
+
+        $maxCoverageInput = $this->request->getPost('insurance_max_per_bill');
+        $sanitizedMaxCoverage = null;
+        if ($maxCoverageInput !== null && $maxCoverageInput !== '') {
+            $numeric = preg_replace('/[^\d\.]/', '', str_replace(',', '', (string) $maxCoverageInput));
+            $sanitizedMaxCoverage = $numeric !== '' ? (float) $numeric : null;
+        }
+
+        $validUntil = $this->request->getPost('insurance_valid_until') ?: null;
+        $insuranceProvider = trim((string) $this->request->getPost('insurance_provider'));
+        $policyNumber = trim((string) $this->request->getPost('insurance_policy_no'));
+
         $data = [
             'patient_code'   => $this->request->getPost('patient_code') ?: null,
             'first_name'     => trim((string) $this->request->getPost('first_name')),
@@ -46,7 +60,11 @@ class Patients extends BaseController
             'email'          => $this->request->getPost('email') ?: null,
             'address'        => $this->request->getPost('address') ?: null,
             'status'         => $this->request->getPost('status') ?: null,
-            'insurance_provider' => $this->request->getPost('insurance_provider') ?: null,
+            'insurance_provider' => $insuranceProvider !== '' ? $insuranceProvider : null,
+            'insurance_policy_no' => $policyNumber !== '' ? $policyNumber : null,
+            'insurance_coverage_pct' => $coveragePct,
+            'insurance_max_per_bill' => $sanitizedMaxCoverage,
+            'insurance_valid_until' => $validUntil,
             'blood_type'     => $this->request->getPost('blood_type') ?: null,
             'medical_notes'  => $this->request->getPost('medical_notes') ?: null,
         ];
