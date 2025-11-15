@@ -3,6 +3,7 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
+use App\Libraries\AutoBillingHelper;
 
 class Appointments extends BaseController
 {
@@ -186,6 +187,100 @@ class Appointments extends BaseController
             return redirect()->to(base_url('appointments'))->with('success', 'Appointment created successfully.');
         } catch (\Throwable $e) {
             return redirect()->back()->with('error', 'Failed to save appointment: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Update appointment status (for completing appointments)
+     */
+    public function updateStatus($id)
+    {
+        helper(['form']);
+        $db = db_connect();
+        $session = session();
+
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to(base_url('login'))->with('error', 'Please login.');
+        }
+
+        $newStatus = (string) $this->request->getPost('status');
+        if (empty($newStatus)) {
+            return redirect()->back()->with('error', 'Status is required.');
+        }
+
+        // Get appointment
+        $appointment = $db->table('appointments')->where('id', $id)->get()->getFirstRow('array');
+        if (!$appointment) {
+            return redirect()->back()->with('error', 'Appointment not found.');
+        }
+
+        try {
+            $db->transStart();
+
+            // Update appointment status
+            $db->table('appointments')
+               ->where('id', $id)
+               ->update([
+                   'status' => $newStatus,
+                   'updated_at' => date('Y-m-d H:i:s')
+               ]);
+
+            // If status changed to 'completed', auto-create bill
+            if ($newStatus === 'completed' && $appointment['status'] !== 'completed') {
+                // Check if bill already exists for this appointment
+                $existingBill = $db->table('bills')
+                                   ->where('appointment_id', $id)
+                                   ->get()
+                                   ->getFirstRow('array');
+
+                if (!$existingBill) {
+                    // Get schedule type to get consultation fee
+                    $scheduleType = $db->table('schedule_types')
+                                      ->where('id', $appointment['schedule_type_id'])
+                                      ->get()
+                                      ->getFirstRow('array');
+
+                    $consultationFee = 500.00; // Default fee
+                    if ($scheduleType && isset($scheduleType['consultation_fee'])) {
+                        $consultationFee = (float)$scheduleType['consultation_fee'];
+                    }
+
+                    // Get doctor name for description
+                    $doctorInfo = $db->table('doctors d')
+                                    ->select('u.first_name, u.last_name')
+                                    ->join('users u', 'u.id = d.user_id')
+                                    ->where('d.id', $appointment['doctor_id'])
+                                    ->get()
+                                    ->getFirstRow('array');
+
+                    $doctorName = 'Dr. ' . ($doctorInfo['first_name'] ?? '') . ' ' . ($doctorInfo['last_name'] ?? '');
+                    $typeName = $scheduleType['type_name'] ?? 'Consultation';
+
+                    // Auto-create bill using helper
+                    $billResult = AutoBillingHelper::createBill([
+                        'patient_id' => $appointment['patient_id'],
+                        'amount' => $consultationFee,
+                        'description' => $typeName . ' - ' . $doctorName,
+                        'bill_date' => $appointment['appointment_date'],
+                        'appointment_id' => $id,
+                    ]);
+
+                    if (!$billResult['success']) {
+                        // Log error but don't fail the appointment update
+                        log_message('error', 'Failed to auto-create bill for appointment ' . $id . ': ' . ($billResult['error'] ?? 'Unknown error'));
+                    }
+                }
+            }
+
+            $db->transComplete();
+
+            if ($db->transStatus() === false) {
+                return redirect()->back()->with('error', 'Failed to update appointment status.');
+            }
+
+            return redirect()->to(base_url('appointments'))->with('success', 'Appointment status updated successfully.');
+        } catch (\Throwable $e) {
+            return redirect()->back()->with('error', 'Failed to update appointment: ' . $e->getMessage());
         }
     }
 }

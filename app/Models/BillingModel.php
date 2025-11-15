@@ -26,5 +26,10 @@ class BillingModel extends Model
         'insurance_notes',
         'status',
         'invoice_no',
+        // Source tracking fields
+        'appointment_id',
+        'admission_id',
+        'lab_request_id',
+        'prescription_id',
     ];
 }

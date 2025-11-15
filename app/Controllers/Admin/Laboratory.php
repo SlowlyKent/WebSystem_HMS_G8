@@ -10,6 +10,7 @@ use App\Models\LabSampleModel;
 use App\Models\LabResultModel;
 use App\Models\PatientModel;
 use App\Models\BillingModel;
+use App\Libraries\AutoBillingHelper;
 
 class Laboratory extends BaseController
 {
@@ -235,66 +236,21 @@ class Laboratory extends BaseController
                 }
             }
 
-            // Auto-create bill for lab tests
-            $patientName = trim($patient['last_name'] . ', ' . $patient['first_name']);
-            $billingModel = new BillingModel();
-            
-            // Get patient insurance info for billing
-            $provider = trim((string)($patient['insurance_provider'] ?? ''));
-            $providerCoverage = [
-                'PhilHealth'  => 20.0,
-                'Maxicare'    => 25.0,
-                'MediCard'    => 15.0,
-                'PhilCare'    => 18.0,
-                'Cocolife'    => 22.0,
-                'Intellicare' => 12.0,
-                'Other'       => 10.0,
-            ];
-            $coveragePct = isset($providerCoverage[$provider]) ? (float)$providerCoverage[$provider] : 0.0;
-            $validUntil = $patient['insurance_valid_until'] ?? null;
-            $isValid = ($provider !== '') && ($validUntil === null || $validUntil === '' || $validUntil >= $requestDate);
-
-            $insuredAmount = 0.0;
-            if ($isValid && $coveragePct > 0 && $totalPrice > 0) {
-                $insuredAmount = round($totalPrice * ($coveragePct / 100), 2);
-                $insuredAmount = min($insuredAmount, $totalPrice);
-            }
-            $patientResp = round($totalPrice - $insuredAmount, 2);
-            $insuranceStatus = $insuredAmount > 0 ? 'applied' : 'none';
-
-            // Create bill
-            $billData = [
+            // Auto-create bill for lab tests using helper
+            $testNames = array_column($selectedTests, 'name');
+            $billResult = AutoBillingHelper::createBill([
                 'patient_id' => $patientId,
-                'patient_name' => $patientName,
-                'bill_date' => $requestDate,
-                'due_date' => date('Y-m-d', strtotime($requestDate . ' +30 days')),
-                'description' => 'Laboratory Tests: ' . implode(', ', array_column($selectedTests, 'name')),
                 'amount' => $totalPrice,
-                'insured_amount' => $insuredAmount,
-                'patient_responsibility' => $patientResp,
-                'insurance_status' => $insuranceStatus,
-                'status' => 'unpaid',
-            ];
+                'description' => 'Laboratory Tests: ' . implode(', ', $testNames),
+                'bill_date' => $requestDate,
+                'lab_request_id' => $requestId,
+            ]);
 
-            $billInsertResult = $billingModel->insert($billData);
-            if (!$billInsertResult) {
+            if (!$billResult['success']) {
                 $db->transRollback();
-                $errors = $billingModel->errors();
-                $errorMsg = 'Failed to create bill.';
-                if (!empty($errors)) {
-                    $errorMsg .= ' ' . implode(', ', $errors);
-                }
                 return redirect()->back()
                     ->withInput()
-                    ->with('error', $errorMsg);
-            }
-            
-            $billId = $billingModel->getInsertID();
-
-            // Generate invoice number
-            if ($billId) {
-                $invoiceNo = 'INV-' . date('Ym') . '-' . str_pad((string)$billId, 6, '0', STR_PAD_LEFT);
-                $billingModel->update($billId, ['invoice_no' => $invoiceNo]);
+                    ->with('error', 'Failed to create bill: ' . ($billResult['error'] ?? 'Unknown error'));
             }
 
             $db->transComplete();

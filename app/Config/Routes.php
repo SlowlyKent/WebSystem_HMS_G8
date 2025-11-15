@@ -28,6 +28,7 @@ $routes->post('scheduling', 'Admin\Scheduling::store');
  // Appointments (Admin/Receptionist)
  $routes->get('appointments', 'Admin\Appointments::index');
  $routes->post('appointments', 'Admin\Appointments::store');
+ $routes->post('appointments/(:num)/status', 'Admin\Appointments::updateStatus/$1');
  // Singular alias
  $routes->get('appointment', 'Admin\\Appointments::index');
  $routes->post('appointment', 'Admin\\Appointments::store');
@@ -58,4 +59,14 @@ $routes->post('scheduling', 'Admin\Scheduling::store');
      $routes->post('billing/pay', 'Admin\Billing::quickPay');
      $routes->post('billing/(:num)/status/(:segment)', 'Admin\Billing::updateStatus/$1/$2');
      $routes->get('billing/(:num)/receipt', 'Admin\Billing::generateReceipt/$1');
+     
+     // Admissions routes
+     $routes->get('admissions', 'Admin\Admissions::index');
+     $routes->post('admissions/admit', 'Admin\Admissions::admit');
+     $routes->post('admissions/discharge/(:num)', 'Admin\Admissions::discharge/$1');
+     
+     // Pharmacy routes
+     $routes->get('pharmacy', 'Admin\Pharmacy::index');
+     $routes->post('pharmacy/prescription', 'Admin\Pharmacy::createPrescription');
+     $routes->post('pharmacy/dispense/(:num)', 'Admin\Pharmacy::dispense/$1');
  });
